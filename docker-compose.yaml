@@ -1,0 +1,6 @@
+services:
+  dotnetgraphql:
+    image: dotnetgraphql  
+    build: ./dotnetgraphql/
+    ports:
+      - "80:80"    
