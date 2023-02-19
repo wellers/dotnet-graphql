@@ -19,6 +19,8 @@ var app = builder.Build();
 
 app.MapGraphQL();
 
+app.MapGet("/status", () => Results.Json(new { start = new DateTimeOffset(DateTime.UtcNow).ToUnixTimeSeconds() }));
+
 app.MapGet("/", () => "🚀 Server ready");
 
 app.Run();
