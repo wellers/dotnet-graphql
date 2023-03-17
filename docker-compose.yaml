@@ -1,6 +1,6 @@
 services:
   dotnetgraphql:
-    image: dotnetgraphql  
-    build: ./dotnetgraphql/
+    container_name: dotnetgraphql  
+    build: ./DotNetGraphQL/
     ports:
-      - "80:80"    
+      - 80:80
